@@ -1,15 +1,18 @@
-Bitbucket Server 4.14 for docker 汉化版
-===
-+ Bitbucket Server 4.14
-+ mysql <= 5.6
+### Bitbucket Server 5.7.1 for docker
 
-docker-compose.yml
++ Bitbucket Server 5.7.1
++ mysql >= 5.7（Bitbucket Server4.14版本需要mysql <= 5.6）
+
+### 汉化
+系统启动成功后进入后台设置导入汉化包
+
+`docker-compose.yml`
 ```yml
 version: '2'
 services:
   bitbucket:
     restart: always
-    image: hyt7212/bitbucket-server:4.14
+    image: ikerlin/bitbucket-server:5.7.1
     ports:
       - 7990:7990
       - 7999:7999
